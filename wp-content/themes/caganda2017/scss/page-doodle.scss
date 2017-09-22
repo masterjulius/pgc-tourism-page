@@ -1,0 +1,122 @@
+/*! (c) 2016-2017 Cagayan PPDO-IT Dev Team | https://www.cagayan.gov.ph */
+
+@charset "UTF-8";
+
+// colours
+@import "sass/components/color";
+
+// variables
+@import "sass/components/variables";
+
+/** BODY **/
+body {
+  background-color: #fff;
+} /** END BODY **/
+
+/*** PAGE ***/
+.cag-page-doodle {
+  	margin-top: 12%;
+  	text-align: center;
+
+  	.slider {
+    	margin-bottom: 50px;
+
+    	.slides {
+    		background-color: transparent;
+
+			li {
+				cursor: pointer;
+			}
+
+    	}
+
+    	h3 {
+      		font-weight: 200px;
+      		text-shadow: 1px 1px #5b5b5b;
+    	}
+
+    	.indicators {
+
+	      	li {
+	        	border-radius: 0;
+	        	margin: 0;
+	        	width: 25%;
+	        	height: 8px;
+	        	-webkit-flex: 1; /* Safari 6.1+ */
+	        	-ms-flex: 1; /* IE 10 */ 
+	        	flex: 1;
+	        	opacity: 0.3;
+
+		        &.active {
+		          height: 15px;
+		          opacity: 1;
+		        }
+
+		        &:nth-child(1) {
+		          background-color: #ef5350;
+		        }
+
+		        &:nth-child(2) {
+		          background-color: #42A5F5;
+		        }
+
+		        &:nth-child(3) {
+		          background-color: #FF7043;
+		        }
+
+		        &:nth-child(4) {
+		          background-color: #26A69A;
+		        }
+
+	      	}
+
+    	}
+
+  	}
+
+  	.cag-doodle-images {
+	    img {
+	      	width: 260px;
+	      	height: 90px;
+	      	display: block;
+	      	margin: 0 auto;
+	    }
+
+	    p {
+	      	margin: 0;
+	      	color: #424242 !important;
+	    }
+	    span {
+	      color: #5e5e5e;
+	    }
+	    hr {
+	      	display: block !important;
+	      	border-top: 0px solid #edeeee !important;
+	      	padding: 0 !important;
+	      	margin-top: 40px !important;
+	      	margin-bottom: 40px !important;
+	    }
+  	}
+}
+/*** END PAGE ***/
+
+/*********************************************************************/
+
+/*** OVERIDING NAV AND MASTHEAD STYLES ***/
+.cag-navbar {
+  .cag-nav {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+}
+
+.cag-masthead {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.cag-navbar .cag-search-wrapper input[type="search"].cag-search-input {
+  background-color: rgba(247, 247, 247, 0.8);
+}
+
+.cag-navbar .cag-search-wrapper input[type="search"].cag-search-input:focus:not([readonly]) {
+  background-color: rgba(255, 255, 255, 0.9);
+}

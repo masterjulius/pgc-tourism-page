@@ -1,0 +1,120 @@
+/*! (c) 2016-2017 Cagayan PPDO-IT Dev Team | https://www.cagayan.gov.ph */
+
+@charset "UTF-8";
+
+// colours
+@import "sass/components/color";
+
+// variables
+@import "sass/components/variables";
+
+// other
+@import "sass/reset.scss";
+@import "sass/general.scss";
+@import "sass/grid.scss";
+/*** PAGE ***/
+.cag-page-qrt {
+
+
+  .cag-qrt-header {
+
+    .cag-qrt-head {
+      position: absolute;
+      top: 0;
+      display: block;
+      width: 100%;
+      height: 500px;
+      padding-top: 158px;
+
+      .cag-qrt-head-text {
+        text-align: center;
+
+        // Center Vertially
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        // Center Vertially
+
+        h1, p {
+          &::-moz-selection {
+            background-color: $highlight-background;
+          }
+          &::selection {
+            background-color: $highlight-background;
+          }
+
+        }
+
+        h1 {
+          display: inline-block;
+          font: {
+            family: Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
+            weight: 700;
+            size: 80px;
+          }
+          color: #fff;
+          letter-spacing: 1px;
+          text-shadow: 1px 1px 1px rgba(0,0,0,.8);
+          margin: 0;
+
+        }
+        p {
+          font: {
+            family: Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
+            weight: 500;
+            size: 30px;
+          }
+          color: #fff;
+          text-shadow: 1px 1px 1px rgba(0,0,0,.8);
+          padding: 0 20%;
+          line-height: 40px;
+
+
+        }
+
+        a.btn {
+          padding: 0 15px;
+          margin: 0 2px;
+          &:hover {
+            background-color: rgba(255,255,255,0.2);
+          }
+          i {
+            &.left {
+              margin-right: 8px;
+            }
+            &.right {
+              margin-left: 8px;
+            }
+          }
+
+        }
+      }
+
+
+    }
+
+  }
+
+  .cag-qrt-contact {
+    padding: 10px 50px;
+
+    table {
+      th, td, p {
+        &::-moz-selection {
+          background-color: $highlight-background;
+        }
+        &::selection {
+          background-color: $highlight-background;
+        }
+      }
+
+      tr:last-child {
+        border: 0;
+      }
+    }
+  }
+
+}
+
+
+/*** END PAGE ***/

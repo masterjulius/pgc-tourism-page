@@ -1,0 +1,231 @@
+/*! (c) 2016-2017 Cagayan PPDO-IT Dev Team | https://www.cagayan.gov.ph */
+
+@charset "UTF-8";
+
+// colours
+@import "sass/components/color";
+
+// variables
+@import "sass/components/variables";
+
+/*** PAGE ***/
+.cag-page-pope {
+
+
+  .cag-pope-header {
+
+    .parallax-container {
+      height: 550px;
+    }
+
+    .cag-pope-head {
+      position: absolute;
+      top: 0;
+      display: block;
+      width: 100%;
+      height: 550px;
+      padding-top: 158px;
+
+      .cag-pope-head-logo {
+        text-align: center;
+
+        // Center Vertially
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        // Center Vertially
+
+        img {
+          margin: 0;
+
+          &::-moz-selection {
+            background-color: $transparent;
+          }
+          &::selection {
+            background-color: $transparent;
+          }
+        }
+
+        p {
+          font: {
+            family: Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
+            weight: 500;
+            size: 40px;
+          }
+          color: #fff;
+          text-shadow: 1px 1px 1px rgba(0,0,0,.8);
+          margin: 0;
+
+          &::-moz-selection {
+            background-color: $highlight-background;
+          }
+          &::selection {
+            background-color: $highlight-background;
+          }
+        }
+
+
+
+
+      }
+
+
+    }
+
+
+  }
+
+  .cag-pope-content {
+    margin-top: 20px;
+
+    .card {
+      .card-content {
+        padding: 20px 30px;
+
+        img {
+          width: 100%;
+          border-radius: 2px;
+          margin: 10px 0;
+
+          &::-moz-selection {
+            background-color: $transparent;
+          }
+          &::selection {
+            background-color: $transparent;
+          }
+
+          &.img-chart {
+            width: 80%;
+            display: block;
+            margin: 0 auto;
+          }
+        }
+
+        h5, p, li, b {
+          color: $color-text;
+
+          &::-moz-selection {
+            background-color: $highlight-background;
+          }
+          &::selection {
+            background-color: $highlight-background;
+          }
+
+        }
+
+        h5, b {
+          font: {
+            size: 20px;
+            weight: 600;
+          }
+        }
+
+        h5 {
+          margin-top: 50px;
+        }
+
+        p {
+          margin: 10px 0;
+        }
+      }
+    }
+
+
+    .cag-pope-chart {
+      text-align: center;
+
+      h6 {
+        border: 2px solid $color-link;
+        border-radius: 2px;
+        padding: 20px;
+        display: inline-block;
+        //margin: 0 20px;
+
+        font: {
+          size: 16px;
+          weight: 500;
+        }
+
+        &::-moz-selection {
+          background-color: $highlight-background;
+        }
+        &::selection {
+          background-color: $highlight-background;
+        }
+
+        &:nth-of-type(3) {
+          margin-left: 70px;
+        }
+        // &:nth-of-type(4) {
+        //   color: blue !important;
+        //   padding: 20px 0;
+        //   border: 0 !important;
+        // }
+        // &:nth-of-type(5) {
+        //   color: red !important;
+        // }
+        // &:nth-of-type(6) {
+        //   color: blue !important;
+        //   padding: 20px 0;
+        //   border: 0 !important;
+        // }
+        // &:nth-of-type(7) {
+        //   color: red !important;
+        // }
+
+
+        &.dotted {
+          padding: 20px 0;
+          color: $color-link;
+          border: 0 !important;
+
+          &::-moz-selection {
+            background-color: $transparent;
+          }
+          &::selection {
+            background-color: $transparent;
+          }
+
+        }
+
+        &.arrow {
+          margin: 0;
+          padding: 0;
+          border: 0 !important;
+          margin-left: 262px;
+          font: {
+            size: 35px;
+          }
+
+
+
+        }
+
+
+
+
+
+      }
+
+      h4 {
+        margin: 0;
+        padding: 0;
+      }
+
+      br {
+        &::-moz-selection {
+          background-color: $transparent;
+        }
+        &::selection {
+          background-color: $transparent;
+        }
+      }
+    }
+
+
+  }
+
+}
+
+
+/*** END PAGE ***/

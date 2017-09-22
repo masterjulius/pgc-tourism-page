@@ -1,0 +1,281 @@
+/*! (c) 2016-2017 Cagayan PPDO-IT Dev Team | https://www.cagayan.gov.ph */
+
+@charset "UTF-8";
+
+// colours
+@import "sass/components/color";
+
+// variables
+@import "sass/components/variables";
+
+// other
+@import "sass/general.scss";
+
+/** BODY **/
+body {
+  background-color: $background-body;
+} /** END BODY **/
+
+/*** PAGE ***/
+.cag-page-gallery {
+
+  .cag-gallery-feature {
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.4)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom, rgba(0,0,0,0), rgba(0,0,0,0.4)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom, rgba(0,0,0,0), rgba(0,0,0,0.4)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.4)); /* Standard syntax (must be last) */
+
+    .cag-gallery-feature-heading {
+      text-align: center;
+
+      h1, p {
+        &::-moz-selection {
+          background-color: $highlight-background;
+        }
+        &::selection {
+          background-color: $highlight-background;
+        }
+
+      }
+
+      h1 {
+        display: block;
+        font: {
+          family: Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
+          weight: 700;
+          size: 100px;
+        }
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 10px;
+        text-shadow: 1px 1px 1px rgba(0,0,0,.8);
+        margin: 0;
+
+      }
+      p {
+        font: {
+          family: Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
+          weight: 500;
+          size: 30px;
+        }
+        color: #fff;
+        text-shadow: 1px 1px 1px rgba(0,0,0,.8);
+        padding: 0 20%;
+        line-height: 40px;
+
+
+      }
+
+    }
+
+    a {
+      border: 2px solid #fff;
+      border-radius: 50%;
+      background-color: rgba(255,255,255,0.3);
+      padding: 0;
+      width: 60px;
+      height: 60px;
+      font: {
+        weight: 800;
+        size: 40px;
+      }
+      &:hover {
+        background-color: rgba(255,255,255,0.5);
+      }
+
+      i {
+        color: #fff;
+        padding: 0;
+      }
+    }
+
+  }
+
+
+  .cag-page-gallery-content {
+    padding: 0 20px;
+    padding-top: 15px;
+
+
+    .card {
+      padding: 0;
+      .album-selector {
+        border-radius: 2px;
+        overflow: hidden;
+        transition: opacity 0.35s, transform 0.35s;
+        line-height: 0 !important;
+        font-size: 0 !important;
+        .album-thumb {
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+        &:hover {
+          opacity: 0.8;
+        }
+        &.gt {
+          .album-thumb:nth-child(1) {
+            display: block;
+            width: 100%;
+            height: 150px;
+          }
+          .album-thumb:nth-child(2),
+          .album-thumb:nth-child(3) {
+            display: inline-block;
+            width: 50%;
+            height: 150px;
+          }
+        }
+        &.gb {
+          .album-thumb:nth-child(1),
+          .album-thumb:nth-child(2) {
+            display: inline-block;
+            width: 50%;
+            height: 150px;
+          }
+          .album-thumb:nth-child(3) {
+            display: inline-block;
+            width: 100%;
+            height: 150px;
+          }
+        }
+        &.gl {
+          .album-thumb:nth-child(1) {
+            display: inline-block;
+            width: 50%;
+            height: 300px;
+            float: left;
+          }
+          .album-thumb:nth-child(2),
+          .album-thumb:nth-child(3) {
+            display: inline-block;
+            width: 50%;
+            height: 150px;
+            float: right;
+          }
+        }
+        &.gr {
+          .album-thumb:nth-child(1) {
+            display: inline-block;
+            width: 50%;
+            height: 300px;
+            float: right;
+          }
+          .album-thumb:nth-child(2),
+          .album-thumb:nth-child(3) {
+            display: inline-block;
+            width: 50%;
+            height: 150px;
+            float: left;
+          }
+        }
+      }
+
+      .album-text {
+        background: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.4)); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(bottom, rgba(0,0,0,0), rgba(0,0,0,0.4)); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(bottom, rgba(0,0,0,0), rgba(0,0,0,0.4)); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.4)); /* Standard syntax (must be last) */
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        z-index: 2;
+        border-radius: 0 0 2px 2px;
+        overflow: hidden;
+        h5, h6, p {
+          color: #fff;
+          padding: 0 10px;
+          margin: 0;
+          &::-moz-selection {
+            background-color: $transparent;
+          }
+          &::selection {
+            background-color: $transparent;
+          }
+        }
+        h6 {
+          padding: 5px 10px;
+          margin-bottom: 2px;
+          font: {
+            weight: 300;
+            size: 15px;
+          }
+        }
+        p {
+          border-top: 1px solid rgba(255,255,255,0.2);
+          padding: 10px 10px;
+          font: {
+            weight: 300;
+            size: 14px;
+          }
+          i.left {
+            margin-right: 4px;
+          }
+        }
+      }
+
+    }
+
+
+
+  }
+
+
+
+
+
+
+
+}
+
+.animate-bg {
+   animation: animate-move-bg 20s infinite;
+}
+
+@keyframes animate-move-bg {
+  0%   { transform: translateY(0px); }
+  100% { transform: translateY(-200px); }
+}
+
+@media only screen and (max-width: 992px) {
+  .parallax-container {
+    height: auto !important;
+    padding: 20px 0;
+  }
+}
+
+/*** END PAGE ***/
+
+
+
+
+
+
+/*********************************************************************/
+
+
+
+
+
+/*** OVERIDING NAV AND MASTHEAD STYLES ***/
+.cag-navbar {
+  .cag-nav {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+}
+
+.cag-masthead {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.cag-navbar .cag-search-wrapper input[type="search"].cag-search-input {
+  background-color: rgba(247, 247, 247, 0.8);
+}
+
+.cag-navbar .cag-search-wrapper input[type="search"].cag-search-input:focus:not([readonly]) {
+  background-color: rgba(255, 255, 255, 0.9);
+}

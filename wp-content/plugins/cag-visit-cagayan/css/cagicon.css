@@ -1,0 +1,113 @@
+@font-face {
+  font-family: 'cagicon';
+  src: url('../font/cagicon.eot?63024704');
+  src: url('../font/cagicon.eot?63024704#iefix') format('embedded-opentype'),
+       url('../font/cagicon.woff2?63024704') format('woff2'),
+       url('../font/cagicon.woff?63024704') format('woff'),
+       url('../font/cagicon.ttf?63024704') format('truetype'),
+       url('../font/cagicon.svg?63024704#cagicon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'cagicon';
+    src: url('../font/cagicon.svg?63024704#cagicon') format('svg');
+  }
+}
+*/
+ 
+ [class^="cagicon-"]:before, [class*=" cagicon-"]:before {
+  font-family: "cagicon";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.cagicon-tourism:before { content: '\e800'; } /* '' */
+.cagicon-beach:before { content: '\e801'; } /* '' */
+.cagicon-cave:before { content: '\e802'; } /* '' */
+.cagicon-festival:before { content: '\e803'; } /* '' */
+.cagicon-forest:before { content: '\e804'; } /* '' */
+.cagicon-river:before { content: '\e805'; } /* '' */
+.cagicon-chruch:before { content: '\e806'; } /* '' */
+.cagicon-gallery:before { content: '\e807'; } /* '' */
+.cagicon-guru:before { content: '\e808'; } /* '' */
+.cagicon-trivia:before { content: '\e809'; } /* '' */
+.cagicon-police:before { content: '\e80a'; } /* '' */
+.cagicon-fiesta:before { content: '\e80b'; } /* '' */
+.cagicon-instruction:before { content: '\e80c'; } /* '' */
+.cagicon-service:before { content: '\e80d'; } /* '' */
+.cagicon-directory:before { content: '\e80e'; } /* '' */
+.cagicon-citizen:before { content: '\e80f'; } /* '' */
+.cagicon-help:before { content: '\e810'; } /* '' */
+.cagicon-fire:before { content: '\e811'; } /* '' */
+.cagicon-ambulance:before { content: '\e812'; } /* '' */
+.cagicon-fiber_new:before { content: '\e813'; } /* '' */
+.cagicon-gov:before { content: '\e814'; } /* '' */
+.cagicon-map:before { content: '\e815'; } /* '' */
+.cagicon-contact_phone:before { content: '\e816'; } /* '' */
+.cagicon-location_city:before { content: '\e817'; } /* '' */
+.cagicon-more_vert:before { content: '\e818'; } /* '' */
+.cagicon-arrow_forward:before { content: '\e819'; } /* '' */
+.cagicon-arrow_back:before { content: '\e81a'; } /* '' */
+.cagicon-navigate_before:before { content: '\e81b'; } /* '' */
+.cagicon-navigate_next:before { content: '\e81c'; } /* '' */
+.cagicon-picture_as_pdf:before { content: '\e81d'; } /* '' */
+.cagicon-arrow_downward:before { content: '\e81e'; } /* '' */
+.cagicon-phone:before { content: '\e81f'; } /* '' */
+.cagicon-insert_invitation:before { content: '\e820'; } /* '' */
+.cagicon-close:before { content: '\e821'; } /* '' */
+.cagicon-arrow_upward:before { content: '\e822'; } /* '' */
+.cagicon-home:before { content: '\e88a'; } /* '' */
+.cagicon-schedule:before { content: '\e8b5'; } /* '' */
+.cagicon-search:before { content: '\e8b6'; } /* '' */
+.cagicon-today:before { content: '\e8df'; } /* '' */
+.cagicon-office:before { content: '\e903'; } /* '' */
+.cagicon-newspaper-1:before { content: '\e904'; } /* '' */
+.cagicon-box-filled:before { content: '\e908'; } /* '' */
+.cagicon-box:before { content: '\e909'; } /* '' */
+.cagicon-box-bookmark:before { content: '\e90a'; } /* '' */
+.cagicon-document-file-pdf2:before { content: '\e90c'; } /* '' */
+.cagicon-film:before { content: '\e913'; } /* '' */
+.cagicon-date_range:before { content: '\e916'; } /* '' */
+.cagicon-library:before { content: '\e921'; } /* '' */
+.cagicon-clock:before { content: '\e94e'; } /* '' */
+.cagicon-calendar:before { content: '\e953'; } /* '' */
+.cagicon-box-add:before { content: '\e95e'; } /* '' */
+.cagicon-spoon-knife:before { content: '\e9a3'; } /* '' */
+.cagicon-briefcase:before { content: '\e9ae'; } /* '' */
+.cagicon-calendar2:before { content: '\f073'; } /* '' */
+.cagicon-briefcase2:before { content: '\f0b1'; } /* '' */
+.cagicon-newspaper:before { content: '\f4f0'; } /* '' */

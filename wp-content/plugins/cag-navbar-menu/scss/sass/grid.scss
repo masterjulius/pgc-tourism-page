@@ -1,0 +1,12 @@
+
+.row {
+  @for $i from 1 through 100 {
+    .col-#{$i} {
+      width: 1% * $i;
+      margin-left: auto;
+      left: auto;
+      right: auto;
+    }
+  }
+
+}

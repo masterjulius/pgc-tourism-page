@@ -1,0 +1,320 @@
+/*! (c) 2016-2017 Cagayan PPDO-IT Dev Team | https://www.cagayan.gov.ph */
+
+@charset "UTF-8";
+
+// colours
+@import "sass/components/color";
+
+// variables
+@import "sass/components/variables";
+
+// other
+
+/** BODY **/
+body {
+  background-color: $background-body;
+} /** END BODY **/
+
+/*** PAGE ***/
+
+// plyr color adjustments
+.plyr {
+
+  // fix materializecss bug
+  span.thumb {
+    display: none;
+  }
+
+  input[type='range']::-ms-fill-lower {
+    background: $color-link;
+  }
+
+  input[type='range']:active::-webkit-slider-thumb {
+    background: $color-link;
+  }
+
+  input[type='range']:active::-moz-range-thumb {
+    background: $color-link;
+  }
+
+  input[type='range']:active::-ms-thumb {
+    background: $color-link;
+  }
+
+}
+
+.plyr--video, .plyr--audio {
+   .plyr__controls {
+      button.tab-focus:focus,
+      button:hover {
+         background: $color-link;
+      }
+   }
+}
+
+.plyr__play-large {
+   background: $color-link;
+   padding: 18px;
+
+   svg {
+     width: 30px;
+     height: 30px;
+   }
+}
+
+.plyr__progress--played,
+.plyr__volume--display {
+   color: $color-link;
+}
+
+.plyr__time {
+  .plyr__time--current {
+    &::-moz-selection {
+       background-color: $transparent;
+    }
+    &::selection {
+       background-color: $transparent;
+    }
+  }
+} // end plyr color adjustments
+
+
+.cag-page-videos {
+  margin-top: 158px;
+  padding: 30px 20px;
+
+  .videos-chip {
+    background-color: $color-link;
+    span {
+      color: $color-text-light;
+      font-size: $size-text;
+      &::-moz-selection {
+         background-color: $transparent;
+      }
+      &::selection {
+         background-color: $transparent;
+      }
+    }
+
+  }
+
+
+  .videos-feature {
+
+    .videos-top {
+      .video-wrapper {
+        border-radius: 4px;
+        overflow: hidden;
+        margin-top: 15px;
+      }
+      h4, p {
+        padding: 0 5px;
+        color: $color-text;
+        &::-moz-selection {
+          background-color: $highlight-background;
+        }
+        &::selection {
+          background-color: $highlight-background;
+        }
+      }
+
+      h4 {
+        font: {
+          weight: 500;
+        }
+      }
+
+      p {
+        font: {
+          size: $size-text;
+        }
+      }
+
+    }
+
+    .videos-side {
+
+      ul.videos-side-items {
+        li {
+          margin-bottom: 8px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+          a {
+            &:hover {
+              & p {
+                color: $color-link;
+                text-shadow: 1px 1px 1px rgba(0,0,0,.2);
+              }
+              & span {
+                button {
+                  background-color: transparentize($color-link2, 0.2);
+                }
+                & img {
+                  filter: grayscale(50%);
+                }
+              }
+            }
+            span {
+              padding: 0;
+              margin: 0;
+              display: block;
+              border-radius: 2px;
+              overflow: hidden;
+
+              button {
+                -moz-transition: all 0.3s ease;
+                -webkit-transition: all 0.3s ease;
+                transition: all 0.3s ease;
+
+                position: absolute;
+                border: 2px solid #fff;
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                color: #fff;
+                background-color: transparentize(#000, 0.5);
+
+                i {
+                  color: #fff;
+                  font: {
+                    size: 20px;
+                  }
+                }
+
+              }
+              img {
+                -moz-transition: all 0.3s ease;
+                -webkit-transition: all 0.3s ease;
+                transition: all 0.3s ease;
+
+                width: 100%;
+                border-radius: 2px;
+              }
+              p {
+                -moz-transition: all 0.3s ease;
+                -webkit-transition: all 0.3s ease;
+                transition: all 0.3s ease;
+                position: absolute;
+                bottom: 0;
+                left: 5px;
+                color: #fff;
+                text-shadow: 1px 1px 1px rgba(0,0,0,.8);
+              }
+            }
+          }
+        }
+      }
+    }
+
+
+
+  }
+
+
+  .videos-body {
+    .row.videos-body-more {
+      //border: 1px solid red;
+
+      .col {
+        //border: 1px solid blue;
+        padding-bottom: 15px;
+      }
+    }
+    a {
+      &:hover {
+        & p {
+          color: $color-link;
+          text-shadow: 1px 1px 1px rgba(0,0,0,.2);
+        }
+        & span {
+          button {
+            background-color: transparentize($color-link2, 0.2);
+          }
+          & img {
+            filter: grayscale(50%);
+          }
+        }
+      }
+      span {
+        padding: 0;
+        margin: 0;
+        display: block;
+        border-radius: 2px;
+        overflow: hidden;
+
+        button {
+          -moz-transition: all 0.3s ease;
+          -webkit-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+
+          position: absolute;
+          border: 2px solid #fff;
+          height: 50px;
+          width: 50px;
+          border-radius: 50%;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+          color: #fff;
+          background-color: transparentize(#000, 0.5);
+
+          i {
+            color: #fff;
+            font: {
+              size: 20px;
+            }
+          }
+
+        }
+        img {
+          -moz-transition: all 0.3s ease;
+          -webkit-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+
+          width: 100%;
+          border-radius: 2px;
+        }
+        p {
+          -moz-transition: all 0.3s ease;
+          -webkit-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+          position: absolute;
+          bottom: 0;
+          left: 5px;
+          color: #fff;
+          text-shadow: 1px 1px 1px rgba(0,0,0,.8);
+        }
+      }
+    }
+
+  }
+
+
+}
+
+/*** END PAGE ***/
+
+/*********************************************************************/
+
+/*** OVERIDING NAV AND MASTHEAD STYLES ***/
+.cag-navbar {
+  .cag-nav {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+}
+
+.cag-masthead {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.cag-navbar .cag-search-wrapper input[type="search"].cag-search-input {
+  background-color: rgba(247, 247, 247, 0.8);
+}
+
+.cag-navbar .cag-search-wrapper input[type="search"].cag-search-input:focus:not([readonly]) {
+  background-color: rgba(255, 255, 255, 0.9);
+}

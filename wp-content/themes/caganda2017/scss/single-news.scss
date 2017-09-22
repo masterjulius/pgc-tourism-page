@@ -1,0 +1,221 @@
+/*! (c) 2016-2017 Cagayan PPDO-IT Dev Team | https://www.cagayan.gov.ph */
+
+@charset "UTF-8";
+
+// colours
+@import "sass/components/color";
+
+// variables
+@import "sass/components/variables";
+
+// other
+@import "sass/cag-share.scss";
+@import "sass/sidebar-title-news.scss";
+@import "sass/general.scss";
+@import "sass/reset.scss";
+
+/*** NEWS SINGLE-PAGE ***/
+.cag-singlepage-news {
+  position: relative;
+  top: $height-navbar;
+  width: 100%;
+  margin-bottom: 50px;
+
+  img {
+    &::-moz-selection {
+       background-color: transparent;
+    }
+    &::selection {
+       background-color: transparent;
+    }
+  }
+
+  //1px 1px 1px rgba(0,0,0,.8)
+  .cag-singlepage-news-header {
+    margin: 0;
+    padding: 0;
+    height: 500px;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    background-color: rgba(33,33,33,0.2);
+    .cag-news-chip {
+      background-color: $color-link;
+      margin-left: 20px;
+      span {
+        color: $color-text-light;
+        font-size: $size-text;
+        &::-moz-selection {
+           background-color: $transparent;
+        }
+        &::selection {
+           background-color: $transparent;
+        }
+      }
+
+    }
+    h2 {
+      color: $color-text-light;
+      text-shadow: 2px 2px 2px rgba(0,0,0,.8);
+      font-size: 4.5vw;
+      font-weight: 500;
+      padding: 0 20px;
+      margin: 0;
+      &::-moz-selection {
+         background-color: $color-link;
+         color: $color-text-light;
+      }
+      &::selection {
+         background-color: $color-link;
+         color: $color-text-light;
+      }
+
+    }
+  }
+
+
+  .cag-singlepage-news-body {
+    margin-top: -40px;
+    padding: 0 20px;
+
+    p, h5, h6 {
+      &::-moz-selection {
+         background-color: $color-link;
+         color: $color-text-light;
+      }
+      &::selection {
+         background-color: $color-link;
+         color: $color-text-light;
+      }
+    }
+
+    p {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-size: $size-text;
+      color: $color-text;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 2px;
+    }
+
+    .cag-single-main-content {
+      h2 {
+        font-size: 1.7rem;
+      }
+      h3 {
+        font-size: 1.2rem;
+      }
+      a {
+        color: #4CAF50;
+        text-decoration: underline; 
+      }
+    }
+
+    .cag-singlepage-news-author {
+      border-bottom: 1px solid $color-line;
+      padding: 15px;
+      display: flex;
+      span.author-img {
+        img {
+          border-radius: 50%;
+          width: 70px;
+          width: 70px;
+        }
+      }
+      span.author-time {
+        margin-left: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h5 {
+          font-size: $size-title;
+          color: $color-text;
+          font-weight: 500;
+          margin: 0;
+          padding: 4px 0;
+          a {
+            &:link, &:visited {
+              color: $color-text;
+            }
+            &:hover {
+              color: $color-text-lighter;
+            }
+            &::-moz-selection {
+               background-color: $color-link;
+               color: $color-text-light;
+            }
+            &::selection {
+               background-color: $color-link;
+               color: $color-text-light;
+            }
+          }
+        }
+        h6 {
+          font-size: $size-text-small;
+          color: $color-link;
+          margin: 0;
+          padding: 4px 0;
+          margin-left: -2px;
+        }
+      }
+    }
+
+    .cag-singlepage-news-side {
+
+      .card-content {
+        ul {
+          margin: 0;
+          li {
+            border-bottom: 1px solid $color-line;
+            line-height: 28px;
+            &:first-child {
+              border-top: 1px solid $color-line;
+            }
+            a {
+              display: flex;
+              padding: 10px 2px;
+              span.news-side-img {
+                img {
+                  border-radius: 2px;
+                  width: 70px;
+                  width: 70px;
+                }
+              }
+
+              span.news-side-text {
+                margin-left: 15px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                p {
+                  font-size: $size-text;
+                  color: $color-text;
+                  margin: 0;
+                  padding: 4px 0;
+                }
+              }
+
+              &:hover {
+                background-color: $background-link;
+                color: $color-link;
+              }
+
+              a:hover > span.news-side-text p {
+                color: red;
+              }
+
+            }
+          }
+        }
+
+      }
+    }
+  }
+
+
+
+}
+
+/*** END NEWS SINGLE-PAGE ***/

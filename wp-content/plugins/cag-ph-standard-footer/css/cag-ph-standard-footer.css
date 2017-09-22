@@ -1,0 +1,45 @@
+/*!
+ * Author: PPDO-IT Dev Team
+ * Author URI: http://www.cagayan.gov.ph
+ */
+/*** PHILILIPINE STANDARD FOOTER ***/
+.cag-footer {
+  background: #999b9b !important;
+  margin: 0 !important;
+  padding: 0 !important; }
+  .cag-footer .container {
+    width: 100%; }
+    .cag-footer .container .col {
+      margin-top: 20px; }
+    .cag-footer .container .row p {
+      margin: 0 !important;
+      padding: 0 !important;
+      font-size: 0.8em !important; }
+    .cag-footer .container .row .col p:nth-child(2) {
+      margin-bottom: 10px !important; }
+  .cag-footer img {
+    margin: 0 !important;
+    padding: 0 !important;
+    float: left;
+    margin: 10px 0 !important;
+    margin-right: 20px !important; }
+  .cag-footer h5 {
+    margin: 0 !important;
+    padding: 0 !important;
+    margin: 10px 0 !important;
+    font-size: 0.9em; }
+  .cag-footer ul {
+    margin: 0 !important;
+    padding: 0 !important; }
+    .cag-footer ul li {
+      margin: 0 !important;
+      padding: 0 !important; }
+      .cag-footer ul li a:link {
+        font-size: 0.8em;
+        line-height: 1px !important;
+        margin: 0 !important;
+        padding: 0 !important; }
+  .cag-footer .footer-copyright {
+    font-size: 0.9em; }
+
+/*# sourceMappingURL=cag-ph-standard-footer.css.map */

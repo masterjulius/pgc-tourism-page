@@ -1,0 +1,31 @@
+/*** PRE-FOOTER ***/
+.cag-navbar {
+
+	.cag-search-wrapper {
+
+		.cag-navbar-menu-search-results {
+			position: relative !important;
+		    ul {
+				li {
+					width: 100% !important;
+					
+					&.no-data {
+						color: rgba(0,0,0,0.87) !important;
+					}
+
+					&.close-result {
+						color: rgba(0,0,0,0.87) !important;
+						text-decoration: underline !important;
+						padding-top:5px !important;
+						padding-bottom: 5px !important;
+						cursor: pointer !important;
+					}
+
+				}		
+			}
+
+		}	
+
+	}
+
+}

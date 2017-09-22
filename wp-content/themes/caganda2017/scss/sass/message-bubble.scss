@@ -1,0 +1,39 @@
+
+// TITLE BUBBLE
+.cag-title-bubble {
+   position: relative;
+   background: $background-dark;
+   border-radius: 1px;
+   padding: 8px 15px;
+   margin-left: 10px;
+   margin-bottom: 10px;
+   display: inline-block;
+
+   :after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 0;
+      height: 0;
+      border: 0.80em solid transparent;
+      border-top-color: $background-dark;
+      border-bottom: 0;
+      margin-left: -0.75em;
+      margin-bottom: -0.75em;
+   }
+
+   a {
+      font-size: $size-text !important;
+      text-transform: uppercase;
+
+      &:link, &:hover, &:visited {
+         color: $color-text-light;
+      }
+
+      &::selection {
+         background: transparent;
+      }
+   }
+
+} // END TITLE BUBBLE

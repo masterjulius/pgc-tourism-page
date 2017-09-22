@@ -1,0 +1,24 @@
+
+// Sidebar Title
+.cag-sidebar-title {
+   margin: 0 !important;
+   background-color: $color-link;
+   text-align: left !important;
+   padding: 10px !important;
+   border-radius: 2px 2px 0 0;
+
+   a {
+      margin: 0 !important;
+      padding: 0 !important;
+      text-transform: uppercase;
+      font-size: 18px;
+
+      &:link, &:hover, &:visited {
+         color: $color-text-light;
+      }
+
+      &::selection {
+         background: transparent;
+      }
+   }
+} // End Sidebar Title

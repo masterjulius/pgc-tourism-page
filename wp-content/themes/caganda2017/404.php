@@ -1,0 +1,2 @@
+<?php get_header(); ?>
+<div class="container-fluid cag-page-404 cag-page-template" style="height:100vh;background:url('<?php echo get_stylesheet_directory_uri(); ?>/images/gif/404.gif') no-repeat center;background-size:100% 100%;"></div>

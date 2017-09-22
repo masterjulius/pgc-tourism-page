@@ -1,0 +1,22 @@
+/*
+Author: PPDO-IT Dev Team
+Author URI: http://www.cagayan.gov.ph
+*/
+
+@charset "UTF-8";
+
+// colours
+@import "sass/components/color";
+
+// variables
+@import "sass/components/variables";
+
+// other
+@import "sass/cag-navbar.scss";
+@import "sass/cag-masthead.scss";
+@import "sass/general.scss";
+
+// import search result design
+@import "cag-navbar-ajax-search";
+
+/*** END  ***/

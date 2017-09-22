@@ -1,0 +1,149 @@
+/*! (c) 2016-2017 Cagayan PPDO-IT Dev Team | https://www.cagayan.gov.ph */
+
+@charset "UTF-8";
+
+// colours
+@import "sass/components/color";
+
+// variables
+@import "sass/components/variables";
+
+
+/*** FOOTER **/
+.reset-margin {
+  margin: 0 !important;
+}
+.reset-padding {
+  padding: 0 !important;
+}
+
+footer {
+  margin: 0 !important;
+}
+.cag-footer {
+  background-color: $background-footer;
+  padding-top: 0 !important;
+
+
+
+  .cag-footer-container {
+    padding: 10px 0;
+
+    img {
+      margin-top: 15px;
+      &::-moz-selection {
+         background: $transparent;
+      }
+      &::selection {
+         background: $transparent;
+      }
+    }
+
+    h5, p, ul li {
+      font-weight: 400;
+    }
+
+    h5 {
+      font-size: $size-text-small;
+      color: $color-text-footer;
+    }
+    p {
+      color: $color-link-footer;
+    }
+    a {
+      color: $color-link-footer;
+    }
+
+    ul li, p {
+      font-size: $size-text-footer;
+      line-height: 20px !important;
+    }
+
+
+    h5, p, a {
+      &::-moz-selection {
+         background: $color-link;
+         color: $color-text-light;
+      }
+      &::selection {
+         background: $color-link;
+         color: $color-text-light;
+      }
+    }
+  }
+
+
+
+  .footer-copyright {
+    .cag-footer-copy {
+      a {
+        margin-left: 20px;
+        color: $color-text-footer;
+        font-size: 15px;
+        i {
+
+          &:nth-child(2) {
+            &:hover {
+              color: $color-heart;
+            }
+          }
+        }
+        span {
+          font-weight: 500;
+          font-size: 14px;
+        }
+
+        &, i, span {
+          &::-moz-selection {
+             background: $transparent;
+             color: $color-text-footer;
+          }
+          &::selection {
+             background: $transparent;
+             color: $color-text-footer;
+          }
+        }
+
+      }
+    }
+    .cag-footer-social {
+      font-size: 22px;
+      margin-right: 20px;
+      ul, li, a, i {
+        &::-moz-selection {
+           background: $transparent;
+        }
+        &::selection {
+           background: $transparent;
+        }
+      }
+      ul {
+        padding: 0;
+        margin: 0;
+
+        li {
+          display: inline-block;
+          a {
+            &:link, &:visited {
+              color: $color-text-footer;
+            }
+          }
+          &:nth-child(1) a:hover {
+            color: $color-facebook;
+          }
+          &:nth-child(2) a:hover {
+            color: $color-twitter;
+          }
+          &:nth-child(3) a:hover {
+            color: $color-googleplus;
+          }
+          &:nth-child(4) a:hover {
+            color: $color-youtube;
+          }
+        }
+      }
+    }
+
+  }
+}
+/*** END FOOTER ***/

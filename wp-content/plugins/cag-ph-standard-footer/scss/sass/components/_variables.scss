@@ -1,0 +1,47 @@
+
+// ==========================================================================
+// Variables
+// ==========================================================================
+
+//usage $color-qwerty: color("green", "base") !default;
+
+// Colors
+$color-text: color("grey", "darken-3") !important;
+$color-text-darker: color("grey", "darken-4") !important;
+$color-text-lighter: color("grey", "darken-1") !important;
+$color-text-light: #ffffff !important;
+$background-dark: color("blue-grey", "darken-2") !important;
+$background-card-light: color("grey", "lighten-4") !important;
+$background-card-lighter: color("grey", "lighten-5") !important;
+$background-link: color("grey", "lighten-2") !important;
+$background-footer: color("grey", "lighten-3") !important;
+$background-body: #ececec !important;
+$color-link: color("green", "base") !important;
+$color-link-active: color("green", "darken-1") !important;
+$color-line: color("grey", "lighten-2") !important;
+$color-text-footer: color("grey", "darken-1") !important;
+$color-link-footer: color("grey", "base") !important;
+$color-facebook: #3b5998 !important;
+$color-twitter: #00aced !important;
+$color-googleplus: #d34836 !important;
+$color-youtube: #e52d27 !important;
+$color-heart: color("materialize-red", "lighten-2") !important;
+
+$transparent: transparent !important;
+
+
+
+// Font Size
+$size-text: 14.5px !important;
+$size-title: 15px !important;
+$size-text-small: 14px !important;
+$size-text-footer: 12.5px !important;
+$size-card-title: 20px !important;
+
+// Heights
+$height-navbar: 58px !important;
+$height-masthead: 100px !important;
+
+// Font Types/Family
+$font-navbar: 'Roboto Condensed', sans-serif;
+$font-general: 'Roboto', sans-serif;

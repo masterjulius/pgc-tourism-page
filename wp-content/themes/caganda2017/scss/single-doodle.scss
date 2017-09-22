@@ -1,0 +1,118 @@
+/*! (c) 2016-2017 Cagayan PPDO-IT Dev Team | https://www.cagayan.gov.ph */
+
+@charset "UTF-8";
+
+// colours
+@import "sass/components/color";
+
+// variables
+@import "sass/components/variables";
+
+// other
+@import "sass/general.scss";
+
+/** BODY **/
+body {
+  background-color: #fff;
+} /** END BODY **/
+
+/***single page***/
+
+.cag-doodle-single {
+  margin-top: 12%;
+  .cag-single-doodle-bg {
+    background-color: #fcfcfc;
+    padding: 20px;
+    border-top: #8a8a8a;
+  }
+  .cag-doodle-single-slider-container {
+    border-bottom: #dddddd solid;
+    border-width: 1px;
+
+    .cag-doodle-single-slider {
+      display: block;
+      margin: 0 auto;
+      width: 70%;
+
+      img {
+
+        &#sliderDoodleMainImg {
+          width: 100%;
+          background-color: #fff;
+        }
+
+      }
+
+      .loading-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -999;
+        background-color: #fff;
+        
+        #loadingDoodleGif {
+          position: relative;
+          display: block;
+          margin: auto auto;
+        }
+
+      }    
+
+    }
+
+    .cag-doodle-inner-slider-parent {
+      position: relative;
+      
+      .div-prev, .div-next {
+        position: absolute;
+        height: 100%;
+
+      }
+
+      .div-prev {
+        top: 0;
+        left: 0;
+      }
+
+      .div-next {
+        top: 0;
+        right: 0;
+      }
+
+    }
+
+  }
+  
+  .cag-doodle-single-more {
+    p {
+      margin: 0;
+      color: #424242 !important;
+    }
+    span {
+      color: #5e5e5e;
+    }
+    h5 {
+      margin: 0;
+    }
+  }
+}
+
+/***end single page***/
+/*** OVERIDING NAV AND MASTHEAD STYLES ***/
+
+.cag-navbar .cag-nav {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.cag-masthead {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.cag-navbar .cag-search-wrapper input[type="search"].cag-search-input {
+  background-color: rgba(247, 247, 247, 0.8);
+  &:focus:not([readonly]) {
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+}

@@ -1,0 +1,163 @@
+/*! (c) 2016-2017 Cagayan PPDO-IT Dev Team | https://www.cagayan.gov.ph */
+
+@charset "UTF-8";
+
+// colours
+@import "sass/components/color";
+
+// variables
+@import "sass/components/variables";
+
+/** BODY **/
+body {
+  background-color: $background-body;
+} /** END BODY **/
+
+/*** PAGE ***/
+.cag-page-search {
+	
+	.search-header {
+		padding-top: 175px;
+		background-image: url('../images/svg/sear-results-wallpaper.svg');
+    	background-color: #74B6B0;
+    	margin-bottom: 0;
+    	position: relative;
+    	height: 50vh;
+
+    	.search-parent {
+    		padding: 50px 25% 70px 25%;
+    		position: absolute;
+	
+	        #txtSearch {
+	         	color: $color-text;
+	         	padding: 5px;
+	         	width: 100%;
+	         	color: $color-text;
+	         	letter-spacing: 1px;
+	         	font-size: 2.1rem;
+				z-index: 99999;
+
+	         	font: {
+	           		weight: 400;
+	         	}
+					
+				&:focus {
+				}
+
+	        }
+
+	        #btnSearch {
+	        	display: none;
+	        }
+
+	    }    
+
+	}
+
+	.search-container-parent {
+		margin: 0;
+		background-color: $color-text-light;
+		padding: 20px 0 25px 0;
+		
+		.search-container-main {
+			width: 90%;
+
+			.result-label {
+				font-size: 1rem;
+				color: $color-text-lighter;
+				margin: 2px 0 2px 0;
+				padding: 0;
+			}
+			
+			// result area
+			.result-set-row {
+				
+				// vertival results
+				.result-set-vertical {
+
+					.vert-card-first {
+						margin-left: 0;
+					}
+
+					.result-set-top {
+
+						h5 {
+							font-size: 1.3rem;
+						}
+
+					}
+
+					.result-set-item {
+
+						.card-action {
+
+							span {
+								font-size: 0.9rem;
+								color: $color-text-lighter;
+							}
+
+						}
+
+					}
+
+				}
+
+				// horizontal results
+				.result-set-horizontal {
+					margin-bottom: 27px;
+
+					a {
+						
+						&.result-set-title {
+							
+							color: #0277bd;
+							h4 {
+								font-size: 1.6rem;
+								margin: 2px 0 2px 0;
+							}
+						}
+						&:hover {
+							text-decoration: underline;
+						}
+
+					}
+					p {
+						margin: 0;
+						&.result-set-permalink {
+							color: $color-link;
+						}
+						&.result-set-content {
+						}
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+}
+/*** END PAGE ***/
+
+/*********************************************************************/
+
+/*** OVERIDING NAV AND MASTHEAD STYLES ***/
+.cag-navbar {
+  .cag-nav {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+}
+
+.cag-masthead {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.cag-navbar .cag-search-wrapper input[type="search"].cag-search-input {
+  background-color: rgba(247, 247, 247, 0.8);
+}
+
+.cag-navbar .cag-search-wrapper input[type="search"].cag-search-input:focus:not([readonly]) {
+  background-color: rgba(255, 255, 255, 0.9);
+}

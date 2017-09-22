@@ -1,0 +1,91 @@
+/*! (c) 2016-2017 Cagayan PPDO-IT Dev Team | https://www.cagayan.gov.ph */
+
+@charset "UTF-8";
+
+// colours
+@import "sass/components/color";
+
+// variables
+@import "sass/components/variables";
+
+/*** PAGE ***/
+.cag-page-100days {
+
+  .cag-100days-header {
+
+    .parallax-container {
+      height: 600px;
+    }
+
+  }
+
+  .cag-100days-content {
+    margin-top: 20px;
+
+    .container {
+      .card {
+        img {
+          width: 100%;
+          border-radius: 2px;
+
+          &::-moz-selection {
+            background-color: $transparent;
+          }
+          &::selection {
+            background-color: $transparent;
+          }
+        }
+
+        h4, p {
+          color: $color-text;
+
+          &::-moz-selection {
+            background-color: $highlight-background;
+          }
+          &::selection {
+            background-color: $highlight-background;
+          }
+        }
+
+        h4 {
+          margin: 0;
+          padding: 0;
+          text-transform: uppercase;
+          padding: 10px 0;
+          font: {
+            size: 25px;
+            weight: 600;
+          }
+        }
+
+        p {
+          margin-top: 20px;
+          font: {
+            size: $size-text;
+          }
+        }
+      }
+    }
+
+  }
+
+}
+
+
+@media only screen and (max-width: 600px) {
+  .cag-100days-content {
+    .container {
+      .card {
+        .row {
+          display: block;
+          img {
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/*** END PAGE ***/

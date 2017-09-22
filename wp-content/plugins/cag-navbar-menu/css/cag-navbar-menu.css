@@ -1,0 +1,575 @@
+/*
+Author: PPDO-IT Dev Team
+Author URI: http://www.cagayan.gov.ph
+*/
+
+/*** MAIN NAV ***/
+
+/* Nav Menu Styling */
+
+.cag-navbar {
+    border: 0px solid red;
+    font-family: 'Roboto Condensed', sans-serif !important;
+}
+
+
+.cag-nav {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 58px;
+    background: rgba(247, 247, 247, 0.9);
+}
+
+.cag-nav ul.cag-main-menu {
+    border: 0px solid green;
+    margin: 0 20px;
+}
+
+.cag-nav .cag-main-menu li.cag-menu-item {
+    border: 0px solid green;
+    height: 58px !important;
+    line-height: 10px;
+}
+
+.cag-nav .cag-main-menu li.cag-menu-item  a.cag-menu-btn {
+    color: #616161;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+    height: 100% !important;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    padding: 0 5px !important;
+
+    min-width: 110px;
+    max-width: 125px;
+}
+
+/* Wave Effect Adjustments */
+.waves-effect.waves-cag-menu .waves-ripple {
+    /* The alpha value allows the text and background color
+    of the button to still show through. */
+    background-color: rgba(224,224,224, 0.8);
+}
+
+
+.cag-nav .cag-main-menu li.cag-menu-item a.cag-menu-btn:hover > i.cagicon, .cag-nav .cag-main-menu li.cag-menu-item a.cag-menu-active > i.cagicon {
+    color: #388e3c;
+    color: #4CAF50 !important;
+}
+
+.cag-nav .cag-main-menu li.cag-menu-item a.cag-menu-btn:hover {
+    color: #388e3c;
+    color: #4CAF50;
+    background: rgba(250, 250, 250, 0.6);
+
+}
+
+.cag-nav .cag-main-menu li.cag-menu-item a.cag-menu-active, .cag-nav .cag-main-menu li.cag-menu-item a.cag-menu-active:hover {
+    color: #388e3c;
+    color: #4CAF50;
+    background: rgba(250, 250, 250, 1);
+    cursor: pointer;
+
+
+}
+
+
+
+/* Cagicon Custom Icons */
+.cag-nav .cag-main-menu li.cag-menu-item a.cag-menu-btn i.cagicon {
+    font-size: 1.8em;
+
+   border: 0px solid red;
+   color: #616161;
+
+   height: 25px;
+   line-height: 25px;
+
+   margin-top: 8px;
+   margin-bottom: 2px;
+
+}
+
+/* Nav Menus & Submenus */
+.cag-nav li.cag-menu-item .cag-menu-content {
+    z-index: -1;
+    background: rgba(250, 250, 250, 1);
+    left: 0;
+    position: absolute;
+    top: 58px;
+    width: 100%;
+    border: 0px solid red;
+    /**height: 320px; **/
+}
+
+
+/** Submenu Items **/
+.cag-submenu-container {
+    margin: 18px 50px;
+}
+
+
+
+/**=============**/
+.cag-menu-content .cag-submenu-title a {
+    color: #616161;
+    font-size: 1.1em;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    line-height: 34px;
+    text-transform: capitalize;
+}
+
+.cag-menu-content .cag-submenu-title a:hover {
+    background: transparent;
+    color: #388e3c;
+    color: #4CAF50;
+
+}
+
+.cag-menu-content .cag-submenu-items ul {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    float: left;
+    padding: 0 10px;
+
+}
+
+.cag-menu-content .cag-submenu-items ul li {
+     line-height: 35px;
+
+}
+
+
+.cag-menu-content .cag-submenu-items ul li a {
+    font-size: 0.9em;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #616161;
+    text-transform: capitalize;
+
+    width: 100%;
+    padding: 0 10px;
+
+
+}
+
+.cag-menu-content .cag-submenu-items ul li a:hover {
+    color: #388e3c;
+    color: #4CAF50;
+
+
+}
+
+.cag-menu-content .cag-submenu-items ul li, .cag-menu-content .cag-submenu-items ul li a.cag-submenu-subitem {
+    width: 96%;
+    margin-left: 10px;
+}
+
+.cag-menu-content .cag-submenu-items ul li, .cag-menu-content .cag-submenu-items ul li a.cag-submenu-subitem:hover {
+    /**background: transparent;**/
+    font-weight: normal;
+}
+
+
+.cag-menu-content .cag-submenu-thumbnail {
+    border: 0px solid green;
+}
+
+
+
+
+
+/* Menu Thumbnails & Effects */
+
+/*
+cag-menu-tn-wrapper  - cag-menu-tn-wrapper
+cag-menu-tn-effect - cag-menu-tn-effect
+
+
+*/
+
+.cag-menu-tn-wrapper {
+  position: relative;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+
+/* Common style */
+.cag-menu-tn-wrapper figure {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 0;
+  background: #212121;
+  text-align: center;
+  cursor: pointer;
+
+    border: 0px solid green;
+
+    width: 100%;
+    height: 252px;
+
+
+}
+
+.cag-menu-tn-wrapper figure img {
+  position: relative;
+  display: block;
+  opacity: 0.8;
+
+
+    margin: 0 !important;
+
+}
+
+.cag-menu-tn-wrapper figure figcaption {
+  padding: 2em;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.cag-menu-tn-wrapper figure figcaption::before,
+.cag-menu-tn-wrapper figure figcaption::after {
+  pointer-events: none;
+}
+
+.cag-menu-tn-wrapper figure figcaption,
+.cag-menu-tn-wrapper figure figcaption > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.cag-menu-tn-wrapper figure figcaption > a {
+  z-index: 1000;
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0;
+}
+
+.cag-menu-tn-wrapper figure h2 {
+  word-spacing: -0.15em;
+  font-weight: 300;
+}
+
+.cag-menu-tn-wrapper figure h2 span {
+  font-weight: 800;
+}
+
+.cag-menu-tn-wrapper figure h2,
+.cag-menu-tn-wrapper figure p {
+  margin: 0;
+}
+
+.cag-menu-tn-wrapper figure p {
+  letter-spacing: 1px;
+  font-size: 68.5%;
+}
+
+/* Individual effects */
+
+figure.cag-menu-tn-effect {
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+}
+
+figure.cag-menu-tn-effect img {
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+    width: 100%;
+}
+
+figure.cag-menu-tn-effect:hover img {
+    opacity: 0.6;
+  -webkit-transform: translate3d(0,0,100px);
+  transform: translate3d(0,0,100px);
+    width: 100%;
+}
+
+
+
+figure.cag-menu-tn-effect h2,
+figure.cag-menu-tn-effect p {
+  position: absolute;
+  top: 45%;
+  left: 0;
+  width: 100%;
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+}
+
+figure.cag-menu-tn-effect h2 {
+  -webkit-transform: translate3d(0,-50%,0) translate3d(0,-150%,0);
+  transform: translate3d(0,-50%,0) translate3d(0,-150%,0);
+
+
+
+    padding: 0 5px;
+    border: 0px solid red;
+}
+
+figure.cag-menu-tn-effect p {
+  padding: 0.20em 2em;
+  -webkit-transform: translate3d(0,-50%,0) translate3d(0,150%,0);
+  transform: translate3d(0,-50%,0) translate3d(0,150%,0);
+
+
+    border: 0px solid red;
+    padding: 0 5px;
+}
+
+figure.cag-menu-tn-effect:hover h2 {
+  -webkit-transform: translate3d(0,-50%,0) translate3d(0,-100%,0);
+  transform: translate3d(0,-50%,0) translate3d(0,-100%,0);
+}
+
+figure.cag-menu-tn-effect:hover p {
+  -webkit-transform: translate3d(0,-50%,0) translate3d(0,100%,0);
+  transform: translate3d(0,-50%,0) translate3d(0,100%,0);
+}
+
+
+figure.cag-menu-tn-effect p {
+    line-height: 1.2em;
+    font-size: 0.70em;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+figure.cag-menu-tn-effect h2 {
+    font-size: 1.8em;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+/** Mobile Menus **/
+
+.cag-nav a.cag-mobile-menu-icon {
+    height: 100%;
+    padding: 0 10px;
+    /*width = 50px */
+
+}
+
+.cag-nav a.cag-mobile-menu-icon i {
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: normal !important;
+
+    color: #616161 !important;
+    font-size: 2.0em;
+    height: 100%;
+    line-height: 58px !important;
+
+}
+
+.cag-nav .cag-mobile-menu {
+   background: #fafafa;
+}
+
+.cag-nav .cag-mobile-menu li a {
+   color: #616161;
+}
+
+.cag-nav .cag-mobile-menu li a i.material-icons {
+    color: #616161;
+}
+
+.cag-mobile-menu-icon i {
+    color: #616161;
+    font-size: 1.0em;
+}
+
+
+/** Search on Nav **/
+.cag-search-wrapper {
+   position: absolute;
+   top: 0;
+   right: 0;
+   height: 100%;
+
+   width: 25%;
+   float: right;
+   line-height: 1px !important;
+   padding: 12px 40px !important;
+   padding-left: 50px !important; /*Mobile hamburger width is 50*/
+   margin: 0 !important;
+
+}
+
+.cag-search-wrapper input[type="search"].cag-search-input {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+
+    padding: 0 10px !important;
+    height: 100% !important;
+    color: #616161 !important;
+    font-size: 0.9em;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: left;
+    width: 100% !important;
+    border-radius: 3px;
+
+    background: rgba(247, 247, 247, 1);
+
+
+}
+
+.cag-search-wrapper input[type=search].cag-search-input:focus:not([readonly]) {
+  border-bottom: 0;
+  box-shadow: 0 0 0;
+  
+  background: rgba(255, 255, 255, 0.9);
+
+
+}
+
+/* Custom Media Query for Search*/
+@media only screen and (max-width: 992px) {
+  .cag-search-mobile {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100% !important;
+     padding-right: 35px !important;
+ }
+}
+
+
+
+
+/*** END MAIN NAV ***/
+
+
+
+/*** MASTHEAD ***/
+
+/* Cagayan Masthead */
+
+.cag-masthead img {
+    max-height: 80px !important;
+    margin: 10px 0 !important;
+    padding: 0 !important;
+
+
+}
+
+.cag-masthead img:nth-child(1) {
+    margin: 10px 20px !important;
+
+    border: 0px solid red;
+}
+
+
+.cag-masthead {
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    position: absolute;
+    left: 0px;
+    top: 58px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+
+    height: auto !important;
+    max-height: 100px !important;
+
+    background-color: rgba(250, 250, 250, 0.5);
+
+
+    border: 0px solid red;
+}
+
+
+.cag-masthead div.nav-wrapper {
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+
+    height: auto !important;
+    max-height: 100px !important;
+    border: 0px solid red;
+}
+
+
+
+/* Philippine Trasparency Seal */
+.cag-masthead img:nth-child(2) {
+    float: right;
+    margin-right: 20px !important;
+}
+
+/* Other Logos on right */
+.cag-masthead img:nth-child(3), .cag-masthead img:nth-child(4) {
+    float: right;
+    max-height: 70px !important;
+    margin: 15px 20px 15px 0 !important;
+
+
+}
+
+/*** END MASTHEAD ***/
+
+
+
+/*** CAROUSEL ***/
+.cag-carousel {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    margin-top: 0;
+    height: 660px !important;
+}
+
+.cag-carousel2 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+/* Slider dots button color adjustments */
+.slider .indicators .indicator-item {
+    background: rgba(225, 225, 225, 0.5);
+}
+
+.slider .indicators .active {
+    background: rgba(76, 175, 80, 0.8) !important;
+}
+
+/*** END CAROUSEL ***/
+
+
+
+
+
+/*** FOOTER ***/
+
+.cag-footer {
+    position: relative;
+}
+
+
+
+
+/*** END FOOTER ***/

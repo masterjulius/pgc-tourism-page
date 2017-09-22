@@ -1,0 +1,234 @@
+/*! (c) 2016-2017 Cagayan PPDO-IT Dev Team | https://www.cagayan.gov.ph */
+
+@charset "UTF-8";
+
+// colours
+@import "sass/components/color";
+
+// variables
+@import "sass/components/variables";
+
+// other
+@import "sass/general.scss";
+
+/** BODY **/
+body {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;;
+  background-size: cover;
+  background-color: $background-body;
+} /** END BODY **/
+
+/*** PAGE ***/
+.cag-page-fdp {
+  margin-top: $height-masthead;
+  padding: 0 20px;
+  padding-top: 100px;
+
+  .cag-fdp-toc {
+    ul.collapsible {
+      div.fdp-collapsible-header {
+        background-color: #fff;
+        padding: 10px 20px;
+        border-bottom: 1px solid $color-line;
+      }
+      div.collapsible-header.active {
+        border-bottom: 0;
+      }
+      div.fdp-active {
+        color: $color-link;
+      }
+      li, a, h5 {
+        color: $color-text;
+      }
+      li {
+        div.collapsible-header {
+          &, i {
+            font: {
+              size: 16px !important;
+            }
+          }
+          &::-moz-selection {
+             background-color: $transparent;
+          }
+          &::selection {
+             background-color: $transparent;
+          }
+        }
+        div.collapsible-body {
+          ul.collection {
+            li {
+              a.collection-item {
+                font: {
+                  size: $size-text;
+                }
+                &:hover {
+                  color: $color-link;
+                }
+                &.active {
+                  background-color: $color-link;
+                  color: $color-text-light;
+                  &:hover {
+                    color: #fff !important;
+                  }
+                }
+
+              }
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+  .cag-fdp-content {
+    h4, h5 {
+      margin-left: 15px;
+      color: $color-text;
+    }
+    .cag-page-fdp-thumb {
+      .card {
+        .card-image {
+          padding: 10px;
+          img {
+            border: 0 solid red;
+          }
+        }
+        .card-content {
+          border-top: 1px solid $color-line;
+          padding: 10px 20px;
+
+
+          //overide materializecss fab
+          .fdp-btn-action {
+            position: absolute;
+            top: auto;
+            bottom: auto;
+            right: 5px;
+            padding-top: 0;
+
+            ul {
+              bottom: 45px;
+            }
+            a.fdp-btn-dots {
+              background-color: $transparent;
+              box-shadow: 0 0 0 0;
+              border-radius: 0;
+              margin-top: -10px;
+              i {
+                color: $color-text;
+                font : {
+                  size: 20px;
+                }
+                &:hover {
+                  color: $color-link;
+                }
+              }
+            }
+          }
+
+          span {
+            display: inline-block;
+            line-height: 18px;
+            color: $color-text;
+            width: 95%;
+            font : {
+              size: $size-text;
+              weight: 400;
+            }
+            &::-moz-selection {
+               background-color: $transparent;
+            }
+            &::selection {
+               background-color: $transparent;
+            }
+
+            i {
+              margin-left: -5px;
+            }
+
+          }
+
+        }
+
+        .card-reveal {
+          span {
+            display: inline-block;
+            line-height: 18px;
+            color: $color-text;
+          }
+          span.title {
+            width: 95%;
+            font : {
+              size: 20px;
+              weight: 400;
+            }
+
+          }
+          span.close {
+            float: right;
+            width: 5%;
+            cursor: pointer;
+            font : {
+              size: 19px !important;
+              weight: 600;
+            }
+
+            i {
+              width: 16px;
+            }
+          }
+
+
+          .fdp-dl-btn {
+            text-align: center;
+            span {
+              color: $color-text;
+              margin-bottom: 10px;
+            }
+            a {
+              margin: 0 2px;
+            }
+          }
+
+
+
+
+
+        }
+
+      }
+    }
+  }
+
+
+  h4, h5, img {
+    &::-moz-selection {
+      color: $highlight-text;
+      background-color: $highlight-background;
+    }
+    &::selection {
+      color: $highlight-text;
+      background-color: $highlight-background;
+    }
+  }
+
+  a {
+    &::-moz-selection {
+      background-color: $transparent;
+    }
+    &::selection {
+      background-color: $transparent;
+    }
+  }
+
+
+
+
+}
+
+
+
+/*** END PAGE ***/

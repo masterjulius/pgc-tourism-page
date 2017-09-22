@@ -1,0 +1,50 @@
+
+.cag-about-side {
+  ul {
+    margin: 0;
+    li {
+      margin-bottom: 10px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      &.about-side-arrow {
+        a {
+          border-radius: 50%;
+          display: inline-block;
+        }
+      }
+      &.active {
+        a {
+          span.about-side-text {
+            background-color: transparentize($color-link2, 0.50) !important;
+          }
+        }
+      }
+      a {
+        text-align: center;
+        color: $color-text-light;
+        border-radius: 2px;
+        display: block;
+        span.about-side-item {
+          display: block;
+          img {
+            width: 100%;
+            display: block;
+          }
+          span.about-side-text {
+            background-color: transparentize($background-dark2, 0.50);
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 8px 3px;
+          }
+
+        }
+
+
+      }
+    }
+  }
+}

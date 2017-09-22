@@ -1,0 +1,24 @@
+
+/**** FAB SHARE ****/
+.cag-share {
+  a.cag-share-btn {
+    background: $color-link;
+  }
+  ul {
+    li {
+      &:nth-child(1) a {
+        background: $color-facebook;
+      }
+      &:nth-child(2) a {
+        background: $color-twitter;
+      }
+      &:nth-child(3) a {
+        background: $color-googleplus;
+      }
+      &:nth-child(4) a {
+        background: $color-youtube;
+      }
+    }
+  }
+}
+/**** END FAB SHARE ****/

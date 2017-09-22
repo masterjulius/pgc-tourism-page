@@ -1,0 +1,859 @@
+/*! (c) 2016-2017 Cagayan PPDO-IT Dev Team | https://www.cagayan.gov.ph */
+
+@charset "UTF-8";
+
+// colours
+@import "sass/components/color";
+
+// variables
+@import "sass/components/variables";
+
+// other
+@import "sass/general.scss";
+@import "sass/reset.scss";
+
+$parallax_dir: "../tourism-third-party/images/parallax/";
+
+// @import "cag-about-side.scss";
+// @import "cag-about-side.css";
+// @import "cag-about-title.css";
+// @import "cag-fish.scss";
+
+body {
+	background-attachment: relative;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	background-color: #ececec !important;
+	z-index: 99999 !important;
+}
+
+/** END BODY **/
+/*** PAGE ***/
+
+.cag-page-tourism {
+	padding-top: 100px;
+	position: relative;
+	background-size: 100% !important;
+	background-color: #ffffff;
+	z-index: 99 !important;
+	.collapsible ul li {
+		margin: -3px !important;
+	}
+	.chip {
+		margin-top: 15px;
+		font-size: 15px !important;
+	}
+	.cag-map-post {
+		margin-left: 12px !important;
+		margin-right: 12px !important;
+		margin-top: -40px !important;
+		img {
+			margin: 15px !important;
+			-webkit-transition: 0.6s ease-out;
+			-moz-transition: 0.6s ease-out;
+			transition: 0.6s ease-out;
+			&:hover {
+				-webkit-transform: rotateZ(720deg);
+				-moz-transform: rotateZ(720deg);
+				transform: rotateZ(720deg);
+			}
+		}
+	}
+	.cag-tourism-mapContainer {
+		position: relative;
+		z-index: 999999 !important;
+		#map {
+			height: 700px !important;
+		}
+		.controls {
+			margin-top: 10px;
+			border: 1px solid transparent;
+			border-radius: 2px 0 0 2px;
+			box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			height: 32px;
+			outline: none;
+			box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+		}
+		#origin-input, #destination-input {
+			background-color: #fff !important;
+			font-family: Roboto;
+			font-size: 15px;
+			font-weight: 300;
+			margin-left: 12px;
+			padding: 0 11px 0 13px;
+			text-overflow: ellipsis;
+			width: 200px;
+		}
+		#origin-input:focus, #destination-input:focus {
+			border-color: #4d90fe !important;
+		}
+		#mode-selector {
+			color: #fff !important;
+			background-color: #4d90fe !important;
+			margin-left: 12px;
+			padding: 5px 11px 0px 11px;
+			label {
+				font-family: Roboto;
+				font-size: 13px;
+				font-weight: 300;
+				color: #ffffff;
+			}
+		}
+	}
+	.cag-tourism-separator {
+		margin-top: 40px !important;
+	}
+	.cag-tourism-fastfacts {
+		span {
+			font-size: 14.5px;
+		}
+		ul li {
+			color: #424242 !important;
+			.collapsible-header:hover {
+				color: #4CAF50 !important;
+			}
+		}
+	}
+	.cag-tourism-videos {
+		span {
+			font-size: 14.5px;
+			color: #4CAF50;
+		}
+		p {
+			font-size: 14px;
+		}
+	}
+	.cag-tourism-touristattraction span, .cag-tourism-travelToursAgencies span, .cag-tourism-accomodation span, .cag-tourism-nativedialect span {
+		font-size: 14.5px;
+	}
+	.cag-tourism-touratt {
+		span {
+			font-size: 14.5px;
+		}
+		ul li {
+			margin: 1px;
+			margin-bottom: -5px !important;
+			display: inline-block;
+		}
+	}
+	.cag-tourism-festival {
+		padding-bottom: 25px !important;
+	}
+	.cag-tourism-singleTopvisited {
+		padding-bottom: 25px !important;
+		p {
+			font-size: 14.5px !important;
+		}
+		.card {
+			padding: 25px !important;
+		}
+		.materialboxed {
+			position: relative;
+			z-index: 99999999 !important;
+		}
+	}
+	.cag-tourism-touratt ul li {
+		.cagicon-facebook {
+			background: #3b5998 !important;
+		}
+		.cagicon-twitter {
+			background: #00aced !important;
+		}
+		.cagicon-youtube-play {
+			background: #e52d27 !important;
+		}
+	}
+	.cag-tourism-travelTours span {
+		font-size: 14.5px;
+	}
+	.cag-tourism-nativedelicacies {
+		span {
+			font-size: 14.5px;
+		}
+		ul li {
+			margin: 1px;
+			margin-bottom: -5px !important;
+			display: inline-block;
+			.cagicon-facebook {
+				background: #3b5998 !important;
+			}
+			.cagicon-twitter {
+				background: #00aced !important;
+			}
+			.cagicon-youtube-play {
+				background: #e52d27 !important;
+			}
+		}
+	}
+	.cag-tourism-singleTopvisited ul li {
+		.cagicon-facebook {
+			background: #3b5998 !important;
+		}
+		.cagicon-twitter {
+			background: #00aced !important;
+		}
+		.cagicon-youtube-play {
+			background: #e52d27 !important;
+		}
+	}
+	#howtogetthere .card-action .chip span, #howtogetaround .card-content span {
+		font-weight: bolder;
+	}
+	#activities {
+		ul li {
+			margin: 1px;
+			margin-bottom: -5px !important;
+			display: inline-block;
+		}
+		span {
+			text-transform: uppercase;
+		}
+	}
+	#cag-activities-hover, #nativedelicacies, #touratt {
+		background: -webkit-linear-gradient(-45deg, #000 0%, #000 100%);
+		background: linear-gradient(-45deg, #ffffff 0%, #ffffff 100%);
+		img {
+			display: block;
+			max-width: 100%;
+			-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+			transition: opacity 0.35s, transform 0.35s;
+			&:hover {
+				-webkit-filter: grayscale(100%);
+				-webkit-transform: scale3d(1.05, 1.05, 1);
+				transform: scale3d(1.05, 1.05, 1);
+			}
+		}
+	}
+	#activities {
+		.card-image {
+			background: -webkit-linear-gradient(-45deg, #000 0%, #000 100%);
+			background: linear-gradient(-45deg, #ffffff 0%, #ffffff 100%);
+			img {
+				display: block;
+				max-width: 100%;
+				-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+				transition: opacity 0.35s, transform 0.35s;
+				&:hover {
+					-webkit-filter: grayscale(100%);
+					-webkit-transform: scale3d(1.05, 1.05, 1);
+					transform: scale3d(1.05, 1.05, 1);
+				}
+			}
+		}
+		ul li {
+			.cagicon-facebook {
+				background: #3b5998 !important;
+			}
+			.cagicon-twitter {
+				background: #00aced !important;
+			}
+			.cagicon-youtube-play {
+				background: #e52d27 !important;
+			}
+		}
+	}
+	.cag-tourism-sidenav ul.collapsible {
+		div {
+			&.tourism-collapsible-header {
+				background-color: #fff;
+				padding: 10px 20px;
+				border-bottom: 1px solid #e0e0e0 !important;
+			}
+			&.collapsible-header.active {
+				border-bottom: 0;
+			}
+			&.tourism-active {
+				color: #4CAF50 !important;
+			}
+		}
+		li, a, h5 {
+			color: #424242 !important;
+		}
+		li div {
+			&.collapsible-header {
+				font-size: 16px !important;
+				i {
+					font-size: 16px !important;
+				}
+				&::-moz-selection, &::selection {
+					background-color: transparent !important;
+				}
+			}
+			&.collapsible-body ul.collection li a.collection-item {
+				font-size: 14.5px !important;
+				&:hover {
+					color: #4CAF50 !important;
+				}
+				&.active {
+					background-color: #4CAF50 !important;
+					color: #ffffff !important;
+					&:hover {
+						color: #fff !important;
+					}
+				}
+			}
+		}
+	}
+	.cag-tourism-content {
+		h4, h5 {
+			margin-left: 15px;
+			color: #424242 !important;
+		}
+		.cag-page-tourism-thumb .card {
+			.card-image {
+				padding: 10px;
+				img {
+					border: 0 solid red;
+				}
+			}
+			.card-content {
+				border-top: 1px solid #e0e0e0 !important;
+				padding: 10px 20px;
+				.tourism-btn-action {
+					position: relative;
+					top: auto;
+					bottom: auto;
+					right: 5px;
+					padding-top: 0;
+					ul {
+						bottom: 45px;
+					}
+					a.tourism-btn-dots {
+						background-color: transparent !important;
+						box-shadow: 0 0 0 0;
+						border-radius: 0;
+						margin-top: -10px;
+						i {
+							color: #424242 !important;
+							font-size: 20px;
+							&:hover {
+								color: #4CAF50 !important;
+							}
+						}
+					}
+				}
+				span {
+					display: inline-block;
+					line-height: 18px;
+					color: #424242 !important;
+					width: 95%;
+					font-size: 14.5px !important;
+					font-weight: 400;
+					&::-moz-selection, &::selection {
+						background-color: transparent !important;
+					}
+					i {
+						margin-left: -5px;
+					}
+				}
+			}
+			.card-reveal {
+				span {
+					display: inline-block;
+					line-height: 18px;
+					color: #424242 !important;
+					&.title {
+						width: 95%;
+						font-size: 20px;
+						font-weight: 400;
+					}
+					&.close {
+						float: right;
+						width: 5%;
+						cursor: pointer;
+						font-size: 19px !important;
+						font-weight: 600;
+						i {
+							width: 16px;
+						}
+					}
+				}
+				.tourism-dl-btn {
+					text-align: center;
+					span {
+						color: #424242 !important;
+						margin-bottom: 10px;
+					}
+					a {
+						margin: 0 2px;
+					}
+				}
+			}
+		}
+	}
+	h4::-moz-selection, h5::-moz-selection, img::-moz-selection, h4::selection, h5::selection, img::selection {
+		color: #424242 !important;
+		background-color: #dadbdf !important;
+	}
+	a {
+		&::-moz-selection, &::selection {
+			background-color: transparent !important;
+		}
+	}
+}
+
+/*native*/
+
+/*att*/
+
+/*activities*/
+
+/******************body********************/
+/******************parallax********************/
+
+.cag-tourism-body .keyart, .keyart-layer {
+	height: 1000px;
+}
+
+.cag-tourism-body {
+	#parallax {
+		display: none;
+	}
+	#nonparallax {
+		display: block;
+		background-image: url("../images/keyart-mobile.jpg");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: auto 100%;
+	}
+	.keyart {
+		position: relative;
+		z-index: 10;
+	}
+	.keyart-layer {
+		background-position: bottom center;
+		background-size: auto 1038px;
+		background-repeat: repeat-x;
+		width: 100%;
+		position: absolute;
+		&.parallax {
+			position: fixed;
+		}
+	}
+	#keyart-0 {
+		background-image: url($parallax_dir + "parallax0.svg");
+	}
+	#keyart-1 {
+		background-image: url($parallax_dir + "parallax1.svg");
+	}
+	#keyart-2 {
+		background-image: url($parallax_dir + "parallax2.svg");
+	}
+	#keyart-3 {
+		background-image: url($parallax_dir + "parallax3.svg");
+	}
+	#keyart-4 {
+		background-image: url($parallax_dir + "parallax4.svg");
+	}
+	#keyart-5 {
+		background-image: url($parallax_dir + "parallax5.svg");
+	}
+	#keyart-6 {
+		background-image: url($parallax_dir + "parallax6.svg");
+	}
+	#keyart-7 {
+		background-image: url($parallax_dir + "parallax7.svg");
+	}
+	#keyart-8 {
+		background-image: url($parallax_dir + "parallax8.svg");
+	}
+	#keyart-scrim {
+		background-color: #ffaf00;
+		opacity: 0;
+	}
+	.cag-tourism-img-white img {
+		z-index: 9999 !important;
+		position: absolute !important;
+		width: 100%;
+	}
+	#nonparallax {
+		background-image: url("../images/keyart-mobile.jpg");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: auto 100%;
+	}
+	.cag-tourism-footer img {
+		z-index: 99999 !important;
+		position: relative !important;
+		width: 100%;
+		margin-top: -20px;
+	}
+}
+
+@media (min-width: 601px) {
+	.cag-tourism-body {
+		#nonparallax {
+			display: none;
+		}
+		#parallax {
+			display: block;
+		}
+	}
+}
+
+@media (max-width: 600px) {
+	.cag-tourism-body {
+		#nonparallax {
+			display: block;
+		}
+		#parallax {
+			display: none;
+		}
+		.section {
+			&.copyright p {
+				font-size: 12px;
+				line-height: 20px;
+				letter-spacing: 1px;
+			}
+			&.companylinks .companies li h1 {
+				margin: 20px;
+			}
+		}
+	}
+}
+
+@media only screen and (max-device-width: 450px) {
+	.cag-tourism-body .keyart, .keyart-layer {
+		height: 550px;
+	}
+	.cag-tourism-body .keyart-layer {
+		position: absolute;
+		background-size: auto 600px;
+	}
+}
+
+/******************end of parallax********************/
+
+.cag-page-tourism {
+	margin-top: 15px;
+	.cag-tourism-img img {
+		z-index: 99 !important;
+		position: relative !important;
+		width: 100%;
+		margin-top: -35px;
+	}
+	.cag-tag {
+		margin-bottom:0 !important;
+		span {
+			font-size: 25px;
+			text-shadow: 2px 2px 10px #ffffff;
+		}
+	}
+	.cag-sticky-parent {
+		padding-top: 10px !important;
+	}
+}
+
+/*** END PAGE ***/
+/*** FOOTER **/
+
+.reset-margin {
+	margin: 0 !important;
+}
+
+.reset-padding {
+	padding: 0 !important;
+}
+
+footer {
+	margin: 0 !important;
+	margin-top: -10px !important;
+}
+
+/*** PRE-FOOTER ***/
+
+.cag-prefooter {
+	.cag-prefooter-container {
+		margin-top: 90px;
+	}
+	a.cag-prefooter-header {
+		color: #424242 !important;
+		font-size: 15px !important;
+		text-transform: uppercase;
+		&::-moz-selection, &::selection {
+			background: transparent !important;
+		}
+	}
+	ul {
+		margin: 0;
+		margin-left: 10px;
+		li {
+			padding: 5px 0;
+			a {
+				&:link, &:visited {
+					color: #424242 !important;
+					font-size: 14.5px !important;
+					font-weight: 400;
+				}
+				&:hover {
+					color: #4CAF50 !important;
+				}
+				&::-moz-selection, &::selection {
+					background: #4CAF50 !important;
+					color: #ffffff !important;
+				}
+			}
+		}
+	}
+	.cag-prefooter-hotline, .cag-prefooter-map, .cag-prefooter-help, .cag-prefooter-citizen, .cag-prefooter-fiesta {
+		border: 1px solid rgba(69, 90, 100, 0.15);
+		padding: 10px;
+		border-radius: 2px;
+		background-color: rgba(250, 250, 250, 0.5);
+	}
+	.cag-prefooter-map #cag-map {
+		margin-top: 5px;
+		border-radius: 2px;
+		overflow: hidden;
+		width: 100%;
+		height: 218px;
+	}
+	.cag-prefooter-help input[type="search"] {
+		background: rgba(255, 255, 255, 0.8);
+		color: #ffffff !important;
+		border-radius: 2px;
+		width: 90%;
+		padding: 0 3%;
+		margin: 10px 2%;
+		border: 1px solid rgba(69, 90, 100, 0.15);
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+		transition: background-color .5s ease 0s;
+		&:focus:not([readonly]) {
+			background: white;
+			border: 1px solid rgba(69, 90, 100, 0);
+			color: #424242 !important;
+			box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+			transition: background-color .5s ease 0s;
+			transition: box-shadow .5s ease 0s;
+		}
+		&::-moz-selection, &::selection {
+			background: #4CAF50 !important;
+			color: #ffffff !important;
+		}
+	}
+	.cag-prefooter-fiesta {
+		.card {
+			box-shadow: 0 0 0;
+			margin-left: 8px;
+			margin-right: 8px;
+			.card-image {
+				border-radius: 2px;
+				img {
+					border-radius: 2px;
+				}
+				span.card-title {
+					font-size: 14.5px !important;
+					color: #ffffff !important;
+					background: rgba(69, 90, 100, 0.3);
+					width: 100%;
+					padding: 10px;
+				}
+			}
+			.card-reveal {
+				border-radius: 2px;
+				span.card-title {
+					font-size: 16px;
+					color: #424242 !important;
+					font-weight: 400;
+				}
+				p {
+					font-size: 14px !important;
+					color: #424242 !important;
+					margin-top: 5px;
+				}
+				span.card-title::-moz-selection, p::-moz-selection, span.card-title::selection, p::selection {
+					background: #4CAF50 !important;
+					color: #ffffff !important;
+				}
+			}
+		}
+		.cag-fiesta-footer {
+			text-align: right;
+			padding: 8px;
+			padding-top: 0;
+			a {
+				color: #424242 !important;
+				font-size: 14.5px !important;
+				&:hover {
+					color: #4CAF50 !important;
+				}
+				&::-moz-selection, &::selection {
+					background: transparent !important;
+				}
+			}
+		}
+	}
+	.cag-prefooter-hotline .cag-contact {
+		text-align: right;
+		padding: 8px;
+		padding-top: 0;
+		a {
+			color: #424242 !important;
+			font-size: 14.5px !important;
+			&:hover {
+				color: #4CAF50 !important;
+			}
+		}
+	}
+}
+
+/*** FOOTER **/
+
+.reset-margin {
+	margin: 0 !important;
+}
+
+.reset-padding {
+	padding: 0 !important;
+}
+
+footer {
+	margin: 0 !important;
+	margin-top: -10px !important;
+}
+
+/*** PRE-FOOTER ***/
+
+.cag-prefooter {
+	.cag-prefooter-container {
+		margin-top: 90px;
+	}
+	a.cag-prefooter-header {
+		color: #424242 !important;
+		font-size: 15px !important;
+		text-transform: uppercase;
+		&::-moz-selection, &::selection {
+			background: transparent !important;
+		}
+	}
+	ul {
+		margin: 0;
+		margin-left: 10px;
+		li {
+			padding: 5px 0;
+			a {
+				&:link, &:visited {
+					color: #424242 !important;
+					font-size: 14.5px !important;
+					font-weight: 400;
+				}
+				&:hover {
+					color: #4CAF50 !important;
+				}
+				&::-moz-selection, &::selection {
+					background: #4CAF50 !important;
+					color: #ffffff !important;
+				}
+			}
+		}
+	}
+	.cag-prefooter-hotline, .cag-prefooter-map, .cag-prefooter-help, .cag-prefooter-citizen, .cag-prefooter-fiesta {
+		border: 1px solid rgba(69, 90, 100, 0.15);
+		padding: 10px;
+		border-radius: 2px;
+		background-color: rgba(250, 250, 250, 0.5);
+	}
+	.cag-prefooter-map #cag-map {
+		margin-top: 5px;
+		border-radius: 2px;
+		overflow: hidden;
+		width: 100%;
+		height: 218px;
+	}
+	.cag-prefooter-help input[type="search"] {
+		background: rgba(255, 255, 255, 0.8);
+		color: #ffffff !important;
+		border-radius: 2px;
+		width: 90%;
+		padding: 0 3%;
+		margin: 10px 2%;
+		border: 1px solid rgba(69, 90, 100, 0.15);
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+		transition: background-color .5s ease 0s;
+		&:focus:not([readonly]) {
+			background: white;
+			border: 1px solid rgba(69, 90, 100, 0);
+			color: #424242 !important;
+			box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+			transition: background-color .5s ease 0s;
+			transition: box-shadow .5s ease 0s;
+		}
+		&::-moz-selection, &::selection {
+			background: #4CAF50 !important;
+			color: #ffffff !important;
+		}
+	}
+	.cag-prefooter-fiesta {
+		.card {
+			box-shadow: 0 0 0;
+			margin-left: 8px;
+			margin-right: 8px;
+			.card-image {
+				border-radius: 2px;
+				img {
+					border-radius: 2px;
+				}
+				span.card-title {
+					font-size: 14.5px !important;
+					color: #ffffff !important;
+					background: rgba(69, 90, 100, 0.3);
+					width: 100%;
+					padding: 10px;
+				}
+			}
+			.card-reveal {
+				border-radius: 2px;
+				span.card-title {
+					font-size: 16px;
+					color: #424242 !important;
+					font-weight: 400;
+				}
+				p {
+					font-size: 14px !important;
+					color: #424242 !important;
+					margin-top: 5px;
+				}
+				span.card-title::-moz-selection, p::-moz-selection, span.card-title::selection, p::selection {
+					background: #4CAF50 !important;
+					color: #ffffff !important;
+				}
+			}
+		}
+		.cag-fiesta-footer {
+			text-align: right;
+			padding: 8px;
+			padding-top: 0;
+			a {
+				color: #424242 !important;
+				font-size: 14.5px !important;
+				&:hover {
+					color: #4CAF50 !important;
+				}
+				&::-moz-selection, &::selection {
+					background: transparent !important;
+				}
+			}
+		}
+	}
+	.cag-prefooter-hotline .cag-contact {
+		text-align: right;
+		padding: 8px;
+		padding-top: 0;
+		a {
+			color: #424242 !important;
+			font-size: 14.5px !important;
+			&:hover {
+				color: #4CAF50 !important;
+			}
+		}
+	}
+}
+
+
+
